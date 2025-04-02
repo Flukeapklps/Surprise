@@ -1,0 +1,64 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Header */
+header h1 {
+    font-size: 2.5em;
+    color: #ff5c8d;
+}
+
+/* Button */
+.surprise-button {
+    background-color: #ff5c8d;
+    color: white;
+    font-size: 1.5em;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.surprise-button:hover {
+    background-color: #e14f79;
+}
+
+/* Hidden Elements */
+.hidden {
+    display: none;
+}
+
+/* Surprise Message */
+#surpriseMessage {
+    margin-top: 30px;
+}
+
+#surpriseMessage h2 {
+    color: #ff5c8d;
+}
+
+#surpriseMessage p {
+    font-size: 1.2em;
+}
+
+/* Video Container */
+#videoContainer {
+    margin-top: 30px;
+}
+
+iframe {
+    border-radius: 15px;
+}

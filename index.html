@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surprise Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Surprise Website!</h1>
+    </header>
+    
+    <main>
+        <button id="surpriseButton" class="surprise-button">
+            💖 Surprise Me 💖
+        </button>
+
+        <div id="surpriseMessage" class="hidden">
+            <h2>You're going to love this!</h2>
+            <p>Click below to watch your surprise:</p>
+            <button id="showVideoBtn">Show Surprise Video 🎥</button>
+        </div>
+        
+        <div id="videoContainer" class="hidden">
+            <iframe id="surpriseVideo" width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </main>
+
+    <footer>
+        <p>Made with 💖 by You!</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
