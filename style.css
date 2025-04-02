@@ -84,6 +84,28 @@ header h1 {
     outline: none;
 }
 
+/* Back Button */
+.back-btn {
+    background-color: #FF6A88;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1.3rem;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 20px;
+}
+
+.back-btn:hover {
+    background-color: #FF4B5C;
+    transform: scale(1.05);
+}
+
+.back-btn:focus {
+    outline: none;
+}
+
 /* Hidden Elements */
 .hidden {
     display: none;
