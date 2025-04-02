@@ -1,39 +1,87 @@
-/* Basic Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
 }
 
-/* Body Styles */
+/* Background and general layout */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f7f7f7;
-    color: #333;
+    background: linear-gradient(to bottom right, #FF9A8B, #FF6A88, #D4A5A5);
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    padding: 20px;
+    flex-direction: column;
 }
 
 /* Header */
 header h1 {
-    font-size: 2.5em;
-    color: #ff5c8d;
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 20px;
+    color: #fff;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
 }
 
-/* Button */
+/* Surprise button */
 .surprise-button {
-    background-color: #ff5c8d;
-    color: white;
-    font-size: 1.5em;
-    padding: 10px 20px;
+    background-color: #FF6A88;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 1.5rem;
     border: none;
-    border-radius: 50px;
+    border-radius: 30px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .surprise-button:hover {
-    background-color: #e14f79;
+    background-color: #FF4B5C;
+    transform: scale(1.05);
+}
+
+.surprise-button:focus {
+    outline: none;
+}
+
+/* Surprise message */
+#surpriseMessage {
+    margin-top: 30px;
+}
+
+#surpriseMessage h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+#surpriseMessage p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* Video Button */
+.video-btn {
+    background-color: #FF9A8B;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1.3rem;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.video-btn:hover {
+    background-color: #FF4B5C;
+    transform: scale(1.05);
+}
+
+.video-btn:focus {
+    outline: none;
 }
 
 /* Hidden Elements */
@@ -41,24 +89,36 @@ header h1 {
     display: none;
 }
 
-/* Surprise Message */
-#surpriseMessage {
-    margin-top: 30px;
-}
-
-#surpriseMessage h2 {
-    color: #ff5c8d;
-}
-
-#surpriseMessage p {
-    font-size: 1.2em;
-}
-
 /* Video Container */
-#videoContainer {
-    margin-top: 30px;
+#videoContainer iframe {
+    margin-top: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    transition: opacity 0.5s ease-in-out;
 }
 
-iframe {
-    border-radius: 15px;
+/* Footer */
+footer {
+    margin-top: 40px;
+    font-size: 1rem;
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+/* Animation for video appearance */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#videoContainer iframe {
+    animation: fadeIn 1s ease-in-out;
 }
