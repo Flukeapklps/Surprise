@@ -85,6 +85,7 @@ header h1 {
 }
 
 /* Back Button */
+/* Back Button */
 .back-btn {
     background-color: #FF6A88;
     color: #fff;
@@ -95,6 +96,7 @@ header h1 {
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
     margin-top: 20px;
+    display: none; /* Initially hidden */
 }
 
 .back-btn:hover {
@@ -105,6 +107,7 @@ header h1 {
 .back-btn:focus {
     outline: none;
 }
+
 
 /* Hidden Elements */
 .hidden {
